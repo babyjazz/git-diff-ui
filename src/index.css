@@ -37,32 +37,29 @@
 
 :root {
   --color-primary-100: #e6ffed;
-  --color-primary-200: #60c7qk;
+  --color-primary-200: #60c7a3;
   --color-primary-300: #22863a;
   --color-danger-100: #ffeef0;
   --color-danger-200: #d73a49;
-  --color-danger-300: #cb2431;
+  --color-danger-300: #8d1d27;
   --color-neutral-100: #f6f8fa;
   --color-neutral-200: #d2d5da;
   --color-neutral-300: #586069;
+  --color-neutral-400: #1d2025;
   --color-info-100: #ddefff;
-  --color-info-200: #0366d6;
   --color-info-300: #005cc5;
 }
 
 @theme {
-  --color-diff-add-bg: var(--color-primary-100);
-  --color-diff-add-border: var(--color-primary-200);
-  --color-diff-add-text: var(--color-primary-300);
-  --color-diff-remove-bg: var(--color-danger-100);
-  --color-diff-remove-border: var(--color-danger-200);
-  --color-diff-remove-text: var(--color-danger-300);
-  --color-diff-neutral-bg: var(--color-neutral-100);
-  --color-diff-neutral-border: var(--color-neutral-200);
-  --color-diff-neutral-text: var(--color-neutral-300);
-  --color-diff-info-bg: var(--color-info-100);
-  --color-diff-info-border: var(--color-info-200);
-  --color-diff-info-text: var(--color-info-300);
+  --color-primary-bg: var(--color-neutral-300);
+  --color-secondary-bg: var(--color-neutral-400);
+  --color-diff-add: var(--color-primary-200);
+  --color-highlight-add: var(--color-primary-300);
+  --color-diff-remove: var(--color-danger-200);
+  --color-highlight-remove: var(--color-danger-300);
+  --color-line-range: var(--color-info-300);
+  --color-text-primary: var(--color-neutral-100)
+    --color-text-secondary: var(--color-neutral-200);
 }
 
 /* 
