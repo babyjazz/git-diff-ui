@@ -58,8 +58,8 @@
   --color-diff-remove: var(--color-danger-200);
   --color-highlight-remove: var(--color-danger-300);
   --color-line-range: var(--color-info-300);
-  --color-text-primary: var(--color-neutral-100)
-    --color-text-secondary: var(--color-neutral-200);
+  --color-text-primary: var(--color-neutral-100);
+  --color-text-secondary: var(--color-neutral-200);
 }
 
 /* 
