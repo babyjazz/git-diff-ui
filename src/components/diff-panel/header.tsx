@@ -25,9 +25,13 @@ export default function Header({
 }: HeaderProps) {
   const isFileRenamed = oldFileName !== newFileName
 
-  const notImplement = () => {
-    // eslint-disable-next-line
-    alert('No implement')
+  const notImplement: MouseEventHandler<HTMLDivElement> = (e) => {
+    e.preventDefault()
+    toast('Not implement', {
+      style: {
+        backgroundColor: 'var(--color-toast-danger)',
+      },
+    })
   }
 
   const handleCopyPath: MouseEventHandler<HTMLDivElement> = (e) => {

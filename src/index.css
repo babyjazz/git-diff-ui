@@ -76,6 +76,7 @@
 
   /* toast */
   --color-toast-success: var(--color-primary-300);
+  --color-toast-danger: var(--color-danger-300);
 }
 
 /* 
