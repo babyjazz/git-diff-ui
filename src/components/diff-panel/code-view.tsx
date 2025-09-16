@@ -7,11 +7,13 @@ interface CodeViewProps {
 
 export default function CodeView({ hunks }: CodeViewProps) {
   return (
-    <div className="text-xs rounded p-2 text-text-primary grid grid-cols-[20px_1fr] gap-x-3">
+    <div className="text-xs rounded text-text-primary grid grid-cols-[50px_1fr] gap-x-8">
       {hunks.map((hunk) => (
         <Fragment key={`${hunk.oldLineStart}-${hunk.newLineStart}`}>
-          <div className="bg-secondary-bg">{hunk.oldLineStart}</div>
-          <div>Old code</div>
+          <div className="bg-secondary-bg p-2 text-center">
+            {hunk.oldLineStart}
+          </div>
+          <div className="py-2">Old code</div>
         </Fragment>
       ))}
     </div>
