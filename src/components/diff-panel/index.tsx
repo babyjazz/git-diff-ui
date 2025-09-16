@@ -9,29 +9,47 @@ import CodeView from './code-view'
 import Header from './header'
 
 export function DiffPanel() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isViewed, setIsViewed] = useState(
+    Array(diffSampleData.length).fill(true),
+  )
 
-  const handleFold = (value: boolean) => {
-    setIsOpen(!value)
+  const handleFold = (i: number) => {
+    setIsViewed((prev) => {
+      const newArr = [...prev]
+      newArr[i] = false
+      return newArr
+    })
+  }
+
+  const handleToggleViewed = (index: number) => {
+    setIsViewed((prev) => {
+      const newArr = [...prev]
+      newArr[index] = !prev[index]
+      return newArr
+    })
   }
 
   return (
     <div className="rounded w-full space-y-3">
-      {diffSampleData.map((file) => (
+      {diffSampleData.map((file, i) => (
         <Fragment key={file.displayPaths[0]}>
-          <Collapsible onOpenChange={setIsOpen} open={isOpen}>
+          <Collapsible
+            defaultOpen
+            open={isViewed[i]}
+            onOpenChange={() => handleToggleViewed(i)}
+          >
             <CollapsibleTrigger className="w-full">
               <Header
-                isOpen={isOpen}
-                handleFold={handleFold}
+                handleFold={() => handleFold(i)}
                 filePath={file.displayPaths[0]}
                 oldPath={file.oldPath}
                 newPath={file.oldPath}
+                isOpen={isViewed[i]}
               />
             </CollapsibleTrigger>
 
             <CollapsibleContent className="w-full bg-primary-bg rounded border-t-0 border border-border-default">
-              <CodeView />
+              <CodeView hunks={file.hunks} />
             </CollapsibleContent>
           </Collapsible>
         </Fragment>

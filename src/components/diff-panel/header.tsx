@@ -10,7 +10,7 @@ import { cn } from '@/utils/clsx'
 
 interface HeaderProps {
   isOpen: boolean
-  handleFold: (value: boolean) => void
+  handleFold: () => void
   filePath?: string
   oldPath?: string
   newPath?: string
@@ -25,7 +25,7 @@ export default function Header({
 }: HeaderProps) {
   const isFileRenamed = oldFileName !== newFileName
 
-  const handelComment = () => {
+  const notImplement = () => {
     // eslint-disable-next-line
     alert('No implement')
   }
@@ -44,7 +44,9 @@ export default function Header({
       )}
     >
       <div className="flex gap-2 items-center">
-        <ChevronDownIcon className="w-3" />
+        <div role="button" tabIndex={0} className="cursor-pointer">
+          <ChevronDownIcon className="w-3" />
+        </div>
         {isFileRenamed ? (
           <>
             <span className="text-text-remove">{oldFileName}</span>
@@ -65,16 +67,25 @@ export default function Header({
       </div>
       <div className="flex gap-2 items-center">
         <div className="flex gap-1">
-          <input
-            type="checkbox"
-            onChange={(e) => handleFold(e.target.checked)}
-          />
+          <input type="checkbox" onChange={handleFold} />
           <label>Viewed</label>
         </div>
-        <div onClick={handelComment} className="cursor-pointer">
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={notImplement}
+          className="cursor-pointer"
+        >
           <MessageSquareIcon className="w-3" />
         </div>
-        <EllipsisIcon className="w-3" />
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={notImplement}
+          className="cursor-pointer"
+        >
+          <EllipsisIcon className="w-3" />
+        </div>
       </div>
     </div>
   )
