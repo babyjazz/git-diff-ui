@@ -1,0 +1,3487 @@
+[
+  {
+    "status": "MODIFIED",
+    "displayPaths": ["electron/modules/file/entrypoints/get-diff.ts"],
+    "oldPath": "electron/modules/file/entrypoints/get-diff.ts",
+    "newPath": "electron/modules/file/entrypoints/get-diff.ts",
+    "hunks": [
+      {
+        "enclosingBlock": "export function parseDiff(diffLines: string[]) {",
+        "oldLineCount": 3,
+        "oldLineStart": 240,
+        "newLineCount": 361,
+        "newLineStart": 243,
+        "beforeDiff": [],
+        "afterDiff": [
+          {
+            "parts": [
+              {
+                "content": "const testDiff = `diff --git a/electron/modules/file/entrypoints/get-diff.ts b/electron/modules/file/entrypoints/get-diff.ts",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 244,
+            "newN": 247
+          },
+          {
+            "parts": [
+              { "content": "index d2ce785..ec35eee 100644", "status": "ADDED" }
+            ],
+            "oldN": 245,
+            "newN": 248
+          },
+          {
+            "parts": [
+              {
+                "content": "--- a/electron/modules/file/entrypoints/get-diff.ts",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 246,
+            "newN": 249
+          },
+          {
+            "parts": [{ "content": "@@ -1,3 +1,4 @@", "status": "ADDED" }],
+            "oldN": 248,
+            "newN": 251
+          },
+          {
+            "parts": [
+              { "content": "+import * as fs from \"fs\";", "status": "ADDED" }
+            ],
+            "oldN": 249,
+            "newN": 252
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 250,
+            "newN": 253
+          },
+          {
+            "parts": [
+              {
+                "content": " import { BrowserWindow } from \"electron\";",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 251,
+            "newN": 254
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 252,
+            "newN": 255
+          },
+          {
+            "parts": [{ "content": " ", "status": "ADDED" }],
+            "oldN": 253,
+            "newN": 256
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 254,
+            "newN": 257
+          },
+          {
+            "parts": [
+              {
+                "content": " import { GitRunner } from \"../../repository/application/git-runner.js\";",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 255,
+            "newN": 258
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 256,
+            "newN": 259
+          },
+          {
+            "parts": [
+              {
+                "content": "@@ -15,11 +16,15 @@ export class GetDiff {",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 257,
+            "newN": 260
+          },
+          {
+            "parts": [
+              {
+                "content": "       this.gitRunner.getRepoDiff(repositoryPath, false),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 258,
+            "newN": 261
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 259,
+            "newN": 262
+          },
+          {
+            "parts": [{ "content": "       window,", "status": "ADDED" }],
+            "oldN": 260,
+            "newN": 263
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 261,
+            "newN": 264
+          },
+          {
+            "parts": [{ "content": "     );", "status": "ADDED" }],
+            "oldN": 262,
+            "newN": 265
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 263,
+            "newN": 266
+          },
+          {
+            "parts": [{ "content": "     ", "status": "ADDED" }],
+            "oldN": 264,
+            "newN": 267
+          },
+          {
+            "parts": [
+              {
+                "content": "+fs.writeFileSync(\"diff.log\", unstagedDiffLines.join('\\n'));",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 265,
+            "newN": 268
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 266,
+            "newN": 269
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 267,
+            "newN": 270
+          },
+          {
+            "parts": [
+              {
+                "content": "     const unstagedChangedFiles = parseDiff(unstagedDiffLines);",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 268,
+            "newN": 271
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 269,
+            "newN": 272
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 270,
+            "newN": 273
+          },
+          {
+            "parts": [
+              {
+                "content": "     const stagedDiffLines = await safeGit(",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 271,
+            "newN": 274
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 272,
+            "newN": 275
+          },
+          {
+            "parts": [
+              {
+                "content": "       this.gitRunner.getRepoDiff(repositoryPath, true),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 273,
+            "newN": 276
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 274,
+            "newN": 277
+          },
+          {
+            "parts": [{ "content": "       window,", "status": "ADDED" }],
+            "oldN": 275,
+            "newN": 278
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 276,
+            "newN": 279
+          },
+          {
+            "parts": [{ "content": "     );", "status": "ADDED" }],
+            "oldN": 277,
+            "newN": 280
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 278,
+            "newN": 281
+          },
+          {
+            "parts": [{ "content": "     ", "status": "ADDED" }],
+            "oldN": 279,
+            "newN": 282
+          },
+          {
+            "parts": [
+              {
+                "content": "+console.log({ stagedDiffLines });",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 280,
+            "newN": 283
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 281,
+            "newN": 284
+          },
+          {
+            "parts": [
+              {
+                "content": "     const stagedChangedFiles = parseDiff(stagedDiffLines);",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 282,
+            "newN": 285
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 283,
+            "newN": 286
+          },
+          {
+            "parts": [{ "content": " ", "status": "ADDED" }],
+            "oldN": 284,
+            "newN": 287
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 285,
+            "newN": 288
+          },
+          {
+            "parts": [
+              {
+                "content": "     const changedFiles = [...stagedChangedFiles, ...unstagedChangedFiles].map(",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 286,
+            "newN": 289
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 287,
+            "newN": 290
+          },
+          {
+            "parts": [
+              {
+                "content": "diff --git a/electron/modules/repository/entrypoints/electron.ts b/electron/modules/repository/entrypoints/electron.ts",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 288,
+            "newN": 291
+          },
+          {
+            "parts": [
+              { "content": "deleted file mode 100644", "status": "ADDED" }
+            ],
+            "oldN": 289,
+            "newN": 292
+          },
+          {
+            "parts": [
+              { "content": "index 85ac660..0000000", "status": "ADDED" }
+            ],
+            "oldN": 290,
+            "newN": 293
+          },
+          {
+            "parts": [
+              {
+                "content": "--- a/electron/modules/repository/entrypoints/electron.ts",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 291,
+            "newN": 294
+          },
+          {
+            "parts": [{ "content": "@@ -1,64 +0,0 @@", "status": "ADDED" }],
+            "oldN": 293,
+            "newN": 296
+          },
+          {
+            "parts": [
+              { "content": "-import path from \"path\";", "status": "ADDED" }
+            ],
+            "oldN": 294,
+            "newN": 297
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 295,
+            "newN": 298
+          },
+          {
+            "parts": [
+              {
+                "content": "-import { fileURLToPath } from \"url\";",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 296,
+            "newN": 299
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 297,
+            "newN": 300
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 298,
+            "newN": 301
+          },
+          {
+            "parts": [
+              {
+                "content": "-import { app, BrowserWindow, ipcMain } from \"electron\";",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 299,
+            "newN": 302
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 300,
+            "newN": 303
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 301,
+            "newN": 304
+          },
+          {
+            "parts": [
+              {
+                "content": "-import { bootstrap } from \"../../../commons/application/bootstrap.js\";",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 302,
+            "newN": 305
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 303,
+            "newN": 306
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 304,
+            "newN": 307
+          },
+          {
+            "parts": [
+              {
+                "content": "-let window: Electron.BrowserWindow;",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 305,
+            "newN": 308
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 306,
+            "newN": 309
+          },
+          {
+            "parts": [
+              {
+                "content": "-let useCases: Awaited<ReturnType<typeof bootstrap>>;",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 307,
+            "newN": 310
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 308,
+            "newN": 311
+          },
+          {
+            "parts": [
+              {
+                "content": "-const __filename = fileURLToPath(import.meta.url);",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 309,
+            "newN": 312
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 310,
+            "newN": 313
+          },
+          {
+            "parts": [
+              {
+                "content": "-const __dirname = path.dirname(__filename);",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 311,
+            "newN": 314
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 312,
+            "newN": 315
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 313,
+            "newN": 316
+          },
+          {
+            "parts": [
+              {
+                "content": "-async function createWindow() {",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 314,
+            "newN": 317
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 315,
+            "newN": 318
+          },
+          {
+            "parts": [
+              {
+                "content": "-  window = new BrowserWindow({",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 316,
+            "newN": 319
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 317,
+            "newN": 320
+          },
+          {
+            "parts": [{ "content": "-    width: 800,", "status": "ADDED" }],
+            "oldN": 318,
+            "newN": 321
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 319,
+            "newN": 322
+          },
+          {
+            "parts": [{ "content": "-    height: 600,", "status": "ADDED" }],
+            "oldN": 320,
+            "newN": 323
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 321,
+            "newN": 324
+          },
+          {
+            "parts": [
+              { "content": "-    webPreferences: {", "status": "ADDED" }
+            ],
+            "oldN": 322,
+            "newN": 325
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 323,
+            "newN": 326
+          },
+          {
+            "parts": [
+              {
+                "content": "-      preload: path.join(__dirname, \"preload.js\"),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 324,
+            "newN": 327
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 325,
+            "newN": 328
+          },
+          {
+            "parts": [
+              { "content": "-      contextIsolation: true,", "status": "ADDED" }
+            ],
+            "oldN": 326,
+            "newN": 329
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 327,
+            "newN": 330
+          },
+          {
+            "parts": [
+              { "content": "-      nodeIntegration: false,", "status": "ADDED" }
+            ],
+            "oldN": 328,
+            "newN": 331
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 329,
+            "newN": 332
+          },
+          {
+            "parts": [{ "content": "-    },", "status": "ADDED" }],
+            "oldN": 330,
+            "newN": 333
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 331,
+            "newN": 334
+          },
+          {
+            "parts": [{ "content": "-  });", "status": "ADDED" }],
+            "oldN": 332,
+            "newN": 335
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 333,
+            "newN": 336
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 334,
+            "newN": 337
+          },
+          {
+            "parts": [
+              {
+                "content": "-  window.loadURL(\"http://localhost:5173\"); // dev URL",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 335,
+            "newN": 338
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 336,
+            "newN": 339
+          },
+          {
+            "parts": [
+              {
+                "content": "-  window.webContents.openDevTools();",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 337,
+            "newN": 340
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 338,
+            "newN": 341
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 339,
+            "newN": 342
+          },
+          {
+            "parts": [
+              {
+                "content": "-  useCases = await bootstrap();",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 340,
+            "newN": 343
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 341,
+            "newN": 344
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 342,
+            "newN": 345
+          },
+          {
+            "parts": [{ "content": "-  ipcMain.handle(", "status": "ADDED" }],
+            "oldN": 343,
+            "newN": 346
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 344,
+            "newN": 347
+          },
+          {
+            "parts": [
+              { "content": "-    \"files:getDiff\",", "status": "ADDED" }
+            ],
+            "oldN": 345,
+            "newN": 348
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 346,
+            "newN": 349
+          },
+          {
+            "parts": [
+              {
+                "content": "-    async (event, message) => await useCases.getDiff.execute(message, window),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 347,
+            "newN": 350
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 348,
+            "newN": 351
+          },
+          {
+            "parts": [{ "content": "-  );", "status": "ADDED" }],
+            "oldN": 349,
+            "newN": 352
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 350,
+            "newN": 353
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 351,
+            "newN": 354
+          },
+          {
+            "parts": [
+              {
+                "content": "-  ipcMain.handle(\"repositories:clone\", async (event, message) => {",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 352,
+            "newN": 355
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 353,
+            "newN": 356
+          },
+          {
+            "parts": [
+              {
+                "content": "-    const res = await useCases.cloneRepository.execute(message, window);",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 354,
+            "newN": 357
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 355,
+            "newN": 358
+          },
+          {
+            "parts": [{ "content": "-    return res;", "status": "ADDED" }],
+            "oldN": 356,
+            "newN": 359
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 357,
+            "newN": 360
+          },
+          {
+            "parts": [{ "content": "-  });", "status": "ADDED" }],
+            "oldN": 358,
+            "newN": 361
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 359,
+            "newN": 362
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 360,
+            "newN": 363
+          },
+          {
+            "parts": [{ "content": "-  ipcMain.handle(", "status": "ADDED" }],
+            "oldN": 361,
+            "newN": 364
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 362,
+            "newN": 365
+          },
+          {
+            "parts": [
+              {
+                "content": "-    \"repositories:getBranchesForRepository\",",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 363,
+            "newN": 366
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 364,
+            "newN": 367
+          },
+          {
+            "parts": [
+              { "content": "-    async (event, message) =>", "status": "ADDED" }
+            ],
+            "oldN": 365,
+            "newN": 368
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 366,
+            "newN": 369
+          },
+          {
+            "parts": [
+              {
+                "content": "-      await useCases.getBranchesForRepository.execute(message, window),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 367,
+            "newN": 370
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 368,
+            "newN": 371
+          },
+          {
+            "parts": [{ "content": "-  );", "status": "ADDED" }],
+            "oldN": 369,
+            "newN": 372
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 370,
+            "newN": 373
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 371,
+            "newN": 374
+          },
+          {
+            "parts": [{ "content": "-  ipcMain.handle(", "status": "ADDED" }],
+            "oldN": 372,
+            "newN": 375
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 373,
+            "newN": 376
+          },
+          {
+            "parts": [
+              {
+                "content": "-    \"repositories:getSaved\",",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 374,
+            "newN": 377
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 375,
+            "newN": 378
+          },
+          {
+            "parts": [
+              { "content": "-    async (event, message) =>", "status": "ADDED" }
+            ],
+            "oldN": 376,
+            "newN": 379
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 377,
+            "newN": 380
+          },
+          {
+            "parts": [
+              {
+                "content": "-      await useCases.getSavedRepositories.execute(window),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 378,
+            "newN": 381
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 379,
+            "newN": 382
+          },
+          {
+            "parts": [{ "content": "-  );", "status": "ADDED" }],
+            "oldN": 380,
+            "newN": 383
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 381,
+            "newN": 384
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 382,
+            "newN": 385
+          },
+          {
+            "parts": [{ "content": "-  ipcMain.handle(", "status": "ADDED" }],
+            "oldN": 383,
+            "newN": 386
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 384,
+            "newN": 387
+          },
+          {
+            "parts": [
+              {
+                "content": "-    \"repositories:selectFromDisk\",",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 385,
+            "newN": 388
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 386,
+            "newN": 389
+          },
+          {
+            "parts": [
+              { "content": "-    async (event, message) =>", "status": "ADDED" }
+            ],
+            "oldN": 387,
+            "newN": 390
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 388,
+            "newN": 391
+          },
+          {
+            "parts": [
+              {
+                "content": "-      await useCases.selectRepositoryFromDisk.execute(window),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 389,
+            "newN": 392
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 390,
+            "newN": 393
+          },
+          {
+            "parts": [{ "content": "-  );", "status": "ADDED" }],
+            "oldN": 391,
+            "newN": 394
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 392,
+            "newN": 395
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 393,
+            "newN": 396
+          },
+          {
+            "parts": [{ "content": "-  ipcMain.handle(", "status": "ADDED" }],
+            "oldN": 394,
+            "newN": 397
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 395,
+            "newN": 398
+          },
+          {
+            "parts": [
+              {
+                "content": "-    \"repositories:selectFromSaved\",",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 396,
+            "newN": 399
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 397,
+            "newN": 400
+          },
+          {
+            "parts": [
+              { "content": "-    async (event, message) =>", "status": "ADDED" }
+            ],
+            "oldN": 398,
+            "newN": 401
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 399,
+            "newN": 402
+          },
+          {
+            "parts": [
+              {
+                "content": "-      await useCases.selectRepositoryFromSaved.execute(message, window),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 400,
+            "newN": 403
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 401,
+            "newN": 404
+          },
+          {
+            "parts": [{ "content": "-  );", "status": "ADDED" }],
+            "oldN": 402,
+            "newN": 405
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 403,
+            "newN": 406
+          },
+          {
+            "parts": [{ "content": "-}", "status": "ADDED" }],
+            "oldN": 404,
+            "newN": 407
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 405,
+            "newN": 408
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 406,
+            "newN": 409
+          },
+          {
+            "parts": [
+              {
+                "content": "-app.whenReady().then(createWindow);",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 407,
+            "newN": 410
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 408,
+            "newN": 411
+          },
+          {
+            "parts": [
+              {
+                "content": "diff --git a/electron/modules/repository/entrypoints/preload.ts b/electron/modules/repository/entrypoints/preload.ts",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 409,
+            "newN": 412
+          },
+          {
+            "parts": [
+              { "content": "deleted file mode 100644", "status": "ADDED" }
+            ],
+            "oldN": 410,
+            "newN": 413
+          },
+          {
+            "parts": [
+              { "content": "index 6cec74b..0000000", "status": "ADDED" }
+            ],
+            "oldN": 411,
+            "newN": 414
+          },
+          {
+            "parts": [
+              {
+                "content": "--- a/electron/modules/repository/entrypoints/preload.ts",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 412,
+            "newN": 415
+          },
+          {
+            "parts": [{ "content": "@@ -1,22 +0,0 @@", "status": "ADDED" }],
+            "oldN": 414,
+            "newN": 417
+          },
+          {
+            "parts": [
+              {
+                "content": "-const electron = require(\"electron\");",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 415,
+            "newN": 418
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 416,
+            "newN": 419
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 417,
+            "newN": 420
+          },
+          {
+            "parts": [
+              {
+                "content": "-electron.contextBridge.exposeInMainWorld(\"electronAPI\", {",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 418,
+            "newN": 421
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 419,
+            "newN": 422
+          },
+          {
+            "parts": [
+              {
+                "content": "-  cloneRepository: (url: string) =>",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 420,
+            "newN": 423
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 421,
+            "newN": 424
+          },
+          {
+            "parts": [
+              {
+                "content": "-    electron.ipcRenderer.invoke(\"repositories:clone\", url),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 422,
+            "newN": 425
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 423,
+            "newN": 426
+          },
+          {
+            "parts": [
+              {
+                "content": "-  getBranchesForRepository: (path: string) =>",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 424,
+            "newN": 427
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 425,
+            "newN": 428
+          },
+          {
+            "parts": [
+              {
+                "content": "-    electron.ipcRenderer.invoke(\"repositories:getBranchesForRepository\", path),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 426,
+            "newN": 429
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 427,
+            "newN": 430
+          },
+          {
+            "parts": [
+              {
+                "content": "-  getDiff: (path: string) => electron.ipcRenderer.invoke(\"files:getDiff\", path),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 428,
+            "newN": 431
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 429,
+            "newN": 432
+          },
+          {
+            "parts": [
+              { "content": "-  getSavedRepositories: () =>", "status": "ADDED" }
+            ],
+            "oldN": 430,
+            "newN": 433
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 431,
+            "newN": 434
+          },
+          {
+            "parts": [
+              {
+                "content": "-    electron.ipcRenderer.invoke(\"repositories:getSaved\"),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 432,
+            "newN": 435
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 433,
+            "newN": 436
+          },
+          {
+            "parts": [
+              {
+                "content": "-  selectRepositoryFromDisk: () =>",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 434,
+            "newN": 437
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 435,
+            "newN": 438
+          },
+          {
+            "parts": [
+              {
+                "content": "-    electron.ipcRenderer.invoke(\"repositories:selectFromDisk\"),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 436,
+            "newN": 439
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 437,
+            "newN": 440
+          },
+          {
+            "parts": [
+              {
+                "content": "-  selectRepositoryFromSaved: (path: string) =>",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 438,
+            "newN": 441
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 439,
+            "newN": 442
+          },
+          {
+            "parts": [
+              {
+                "content": "-    electron.ipcRenderer.invoke(\"repositories:selectFromSaved\", path),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 440,
+            "newN": 443
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 441,
+            "newN": 444
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 442,
+            "newN": 445
+          },
+          {
+            "parts": [{ "content": "-  onGitError: (", "status": "ADDED" }],
+            "oldN": 443,
+            "newN": 446
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 444,
+            "newN": 447
+          },
+          {
+            "parts": [{ "content": "-    cb: (", "status": "ADDED" }],
+            "oldN": 445,
+            "newN": 448
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 446,
+            "newN": 449
+          },
+          {
+            "parts": [
+              {
+                "content": "-      event: Electron.IpcRendererEvent,",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 447,
+            "newN": 450
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 448,
+            "newN": 451
+          },
+          {
+            "parts": [
+              {
+                "content": "-      data: { message: string; command?: string },",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 449,
+            "newN": 452
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 450,
+            "newN": 453
+          },
+          {
+            "parts": [{ "content": "-    ) => void,", "status": "ADDED" }],
+            "oldN": 451,
+            "newN": 454
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 452,
+            "newN": 455
+          },
+          {
+            "parts": [
+              {
+                "content": "-  ) => electron.ipcRenderer.on(\"git-error\", cb),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 453,
+            "newN": 456
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 454,
+            "newN": 457
+          },
+          {
+            "parts": [{ "content": "-});", "status": "ADDED" }],
+            "oldN": 455,
+            "newN": 458
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 456,
+            "newN": 459
+          },
+          {
+            "parts": [
+              {
+                "content": "diff --git a/electron/modules/repository/infra/git-cli-runner.ts b/electron/modules/repository/infra/git-cli-runner.ts",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 457,
+            "newN": 460
+          },
+          {
+            "parts": [
+              { "content": "index e9590e4..9edc01c 100644", "status": "ADDED" }
+            ],
+            "oldN": 458,
+            "newN": 461
+          },
+          {
+            "parts": [
+              {
+                "content": "--- a/electron/modules/repository/infra/git-cli-runner.ts",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 459,
+            "newN": 462
+          },
+          {
+            "parts": [
+              {
+                "content": "@@ -121,12 +121,10 @@ export class GitCliRunner implements GitRunner {",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 461,
+            "newN": 464
+          },
+          {
+            "parts": [{ "content": "     if (staged) {", "status": "ADDED" }],
+            "oldN": 462,
+            "newN": 465
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 463,
+            "newN": 466
+          },
+          {
+            "parts": [
+              {
+                "content": "       args.push(\"--cached\");",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 464,
+            "newN": 467
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 465,
+            "newN": 468
+          },
+          {
+            "parts": [{ "content": "     }", "status": "ADDED" }],
+            "oldN": 466,
+            "newN": 469
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 467,
+            "newN": 470
+          },
+          {
+            "parts": [
+              { "content": "     const lines = await ", "status": "ADDED" }
+            ],
+            "oldN": 468,
+            "newN": 471
+          },
+          {
+            "parts": [{ "content": "-this.safeRun(", "status": "ADDED" }],
+            "oldN": 469,
+            "newN": 472
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 470,
+            "newN": 473
+          },
+          {
+            "parts": [{ "content": "-      \"git\",", "status": "ADDED" }],
+            "oldN": 471,
+            "newN": 474
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 472,
+            "newN": 475
+          },
+          {
+            "parts": [
+              {
+                "content": "-      [\"diff\", \"--no-color\", \"--word-diff=porcelain\"],",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 473,
+            "newN": 476
+          },
+          {
+            "parts": [
+              { "content": "+this.safeRun(\"git\", args,", "status": "ADDED" }
+            ],
+            "oldN": 474,
+            "newN": 477
+          },
+          {
+            "parts": [{ "content": "  {", "status": "ADDED" }],
+            "oldN": 475,
+            "newN": 478
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 476,
+            "newN": 479
+          },
+          {
+            "parts": [
+              { "content": "       trimOutput: false,", "status": "ADDED" }
+            ],
+            "oldN": 477,
+            "newN": 480
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 478,
+            "newN": 481
+          },
+          {
+            "parts": [{ "content": "       cwd: ", "status": "ADDED" }],
+            "oldN": 479,
+            "newN": 482
+          },
+          {
+            "parts": [{ "content": "-repositoryPath },", "status": "ADDED" }],
+            "oldN": 480,
+            "newN": 483
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 481,
+            "newN": 484
+          },
+          {
+            "parts": [{ "content": "-    );", "status": "ADDED" }],
+            "oldN": 482,
+            "newN": 485
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 483,
+            "newN": 486
+          },
+          {
+            "parts": [
+              { "content": "-    parseDiff(lines);", "status": "ADDED" }
+            ],
+            "oldN": 484,
+            "newN": 487
+          },
+          {
+            "parts": [{ "content": "+repositoryPath,", "status": "ADDED" }],
+            "oldN": 485,
+            "newN": 488
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 486,
+            "newN": 489
+          },
+          {
+            "parts": [{ "content": "+    });", "status": "ADDED" }],
+            "oldN": 487,
+            "newN": 490
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 488,
+            "newN": 491
+          },
+          {
+            "parts": [{ "content": "     return lines;", "status": "ADDED" }],
+            "oldN": 489,
+            "newN": 492
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 490,
+            "newN": 493
+          },
+          {
+            "parts": [{ "content": "   }", "status": "ADDED" }],
+            "oldN": 491,
+            "newN": 494
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 492,
+            "newN": 495
+          },
+          {
+            "parts": [{ "content": " ", "status": "ADDED" }],
+            "oldN": 493,
+            "newN": 496
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 494,
+            "newN": 497
+          },
+          {
+            "parts": [
+              {
+                "content": "diff --git a/src/components/atoms/header-repo-selection.tsx b/src/components/atoms/header-repo-selection.tsx",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 495,
+            "newN": 498
+          },
+          {
+            "parts": [
+              { "content": "index 703a926..89b1ba7 100644", "status": "ADDED" }
+            ],
+            "oldN": 496,
+            "newN": 499
+          },
+          {
+            "parts": [
+              {
+                "content": "--- a/src/components/atoms/header-repo-selection.tsx",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 497,
+            "newN": 500
+          },
+          {
+            "parts": [
+              {
+                "content": "@@ -36,11 +36,17 @@ export default function HeaderRepoSelection({",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 499,
+            "newN": 502
+          },
+          {
+            "parts": [{ "content": " ", "status": "ADDED" }],
+            "oldN": 500,
+            "newN": 503
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 501,
+            "newN": 504
+          },
+          {
+            "parts": [{ "content": "   return (", "status": "ADDED" }],
+            "oldN": 502,
+            "newN": 505
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 503,
+            "newN": 506
+          },
+          {
+            "parts": [
+              {
+                "content": "     <div className=\"flex h-full w-1/2 items-center justify-center border-r-1 border-gray-400 text-sm\">",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 504,
+            "newN": 507
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 505,
+            "newN": 508
+          },
+          {
+            "parts": [{ "content": "       <div", "status": "ADDED" }],
+            "oldN": 506,
+            "newN": 509
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 507,
+            "newN": 510
+          },
+          {
+            "parts": [
+              {
+                "content": "         className=\"mr-2 flex ",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 508,
+            "newN": 511
+          },
+          {
+            "parts": [{ "content": "-cursor-pointer\">", "status": "ADDED" }],
+            "oldN": 509,
+            "newN": 512
+          },
+          {
+            "parts": [{ "content": "+cursor-pointer\"", "status": "ADDED" }],
+            "oldN": 510,
+            "newN": 513
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 511,
+            "newN": 514
+          },
+          {
+            "parts": [
+              { "content": "+        onClick={() =>", "status": "ADDED" }
+            ],
+            "oldN": 512,
+            "newN": 515
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 513,
+            "newN": 516
+          },
+          {
+            "parts": [
+              { "content": "+          setCurrentAction(", "status": "ADDED" }
+            ],
+            "oldN": 514,
+            "newN": 517
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 515,
+            "newN": 518
+          },
+          {
+            "parts": [
+              {
+                "content": "+            currentAction === \"RepoMethodSelection\"",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 516,
+            "newN": 519
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 517,
+            "newN": 520
+          },
+          {
+            "parts": [
+              { "content": "+              ? undefined", "status": "ADDED" }
+            ],
+            "oldN": 518,
+            "newN": 521
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 519,
+            "newN": 522
+          },
+          {
+            "parts": [
+              {
+                "content": "+              : \"RepoMethodSelection\",",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 520,
+            "newN": 523
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 521,
+            "newN": 524
+          },
+          {
+            "parts": [{ "content": "+          )", "status": "ADDED" }],
+            "oldN": 522,
+            "newN": 525
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 523,
+            "newN": 526
+          },
+          {
+            "parts": [{ "content": "+        }", "status": "ADDED" }],
+            "oldN": 524,
+            "newN": 527
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 525,
+            "newN": 528
+          },
+          {
+            "parts": [{ "content": "+      >", "status": "ADDED" }],
+            "oldN": 526,
+            "newN": 529
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 527,
+            "newN": 530
+          },
+          {
+            "parts": [
+              {
+                "content": "         <div className=\"mr-4 flex items-center ",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 528,
+            "newN": 531
+          },
+          {
+            "parts": [{ "content": "-text-sm\"", "status": "ADDED" }],
+            "oldN": 529,
+            "newN": 532
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 530,
+            "newN": 533
+          },
+          {
+            "parts": [
+              {
+                "content": "-          onClick={() => setCurrentAction(\"RepoMethodSelection\")}",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 531,
+            "newN": 534
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 532,
+            "newN": 535
+          },
+          {
+            "parts": [{ "content": "-        >", "status": "ADDED" }],
+            "oldN": 533,
+            "newN": 536
+          },
+          {
+            "parts": [{ "content": "+text-sm\">", "status": "ADDED" }],
+            "oldN": 534,
+            "newN": 537
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 535,
+            "newN": 538
+          },
+          {
+            "parts": [
+              {
+                "content": "           Select a repository to get started",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 536,
+            "newN": 539
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 537,
+            "newN": 540
+          },
+          {
+            "parts": [
+              { "content": "         </div>{\" \"}", "status": "ADDED" }
+            ],
+            "oldN": 538,
+            "newN": 541
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 539,
+            "newN": 542
+          },
+          {
+            "parts": [
+              {
+                "content": "         <PlusIcon cursor=\"pointer\" />",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 540,
+            "newN": 543
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 541,
+            "newN": 544
+          },
+          {
+            "parts": [
+              {
+                "content": "diff --git a/src/components/organisms/diff.tsx b/src/components/organisms/diff.tsx",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 542,
+            "newN": 545
+          },
+          {
+            "parts": [
+              { "content": "index e939aef..b80a6cd 100644", "status": "ADDED" }
+            ],
+            "oldN": 543,
+            "newN": 546
+          },
+          {
+            "parts": [
+              {
+                "content": "--- a/src/components/organisms/diff.tsx",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 544,
+            "newN": 547
+          },
+          {
+            "parts": [
+              {
+                "content": "@@ -40,16 +40,21 @@ export default function Diff({ diff }: { diff: FileDiff }) {",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 546,
+            "newN": 549
+          },
+          {
+            "parts": [
+              {
+                "content": "                     style={{ backgroundColor: lineColor }}",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 547,
+            "newN": 550
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 548,
+            "newN": 551
+          },
+          {
+            "parts": [
+              {
+                "content": "                     dangerouslySetInnerHTML={{",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 549,
+            "newN": 552
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 550,
+            "newN": 553
+          },
+          {
+            "parts": [
+              {
+                "content": "                       __html: line.content",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 551,
+            "newN": 554
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 552,
+            "newN": 555
+          },
+          {
+            "parts": [
+              { "content": "                         ", "status": "ADDED" }
+            ],
+            "oldN": 553,
+            "newN": 556
+          },
+          {
+            "parts": [
+              { "content": "+.replace(/&/g, \"&amp;\")", "status": "ADDED" }
+            ],
+            "oldN": 554,
+            "newN": 557
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 555,
+            "newN": 558
+          },
+          {
+            "parts": [
+              {
+                "content": "+                        .replace(/</g, \"&lt;\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 556,
+            "newN": 559
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 557,
+            "newN": 560
+          },
+          {
+            "parts": [
+              {
+                "content": "+                        .replace(/>/g, \"&gt;\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 558,
+            "newN": 561
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 559,
+            "newN": 562
+          },
+          {
+            "parts": [
+              {
+                "content": "+                        .replace(/\"/g, \"&quot;\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 560,
+            "newN": 563
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 561,
+            "newN": 564
+          },
+          {
+            "parts": [
+              {
+                "content": "+                        .replace(/'/g, \"&#39;\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 562,
+            "newN": 565
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 563,
+            "newN": 566
+          },
+          {
+            "parts": [
+              {
+                "content": "                         .replace(",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 564,
+            "newN": 567
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 565,
+            "newN": 568
+          },
+          {
+            "parts": [
+              { "content": "                           ", "status": "ADDED" }
+            ],
+            "oldN": 566,
+            "newN": 569
+          },
+          {
+            "parts": [{ "content": "-/\\<\\+\\>/g,", "status": "ADDED" }],
+            "oldN": 567,
+            "newN": 570
+          },
+          {
+            "parts": [{ "content": "+/\\{\\{\\+\\}\\}/g,", "status": "ADDED" }],
+            "oldN": 568,
+            "newN": 571
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 569,
+            "newN": 572
+          },
+          {
+            "parts": [
+              {
+                "content": "                           \\`<span style=\"background-color: rgba(41, 234, 105, 0.5);white-space: pre;\">\\`,",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 570,
+            "newN": 573
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 571,
+            "newN": 574
+          },
+          {
+            "parts": [
+              { "content": "                         )", "status": "ADDED" }
+            ],
+            "oldN": 572,
+            "newN": 575
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 573,
+            "newN": 576
+          },
+          {
+            "parts": [
+              {
+                "content": "                         .replace(",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 574,
+            "newN": 577
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 575,
+            "newN": 578
+          },
+          {
+            "parts": [
+              { "content": "                           ", "status": "ADDED" }
+            ],
+            "oldN": 576,
+            "newN": 579
+          },
+          {
+            "parts": [{ "content": "-/\\<\\-\\>/g,", "status": "ADDED" }],
+            "oldN": 577,
+            "newN": 580
+          },
+          {
+            "parts": [{ "content": "+/\\{\\{\\-\\}\\}/g,", "status": "ADDED" }],
+            "oldN": 578,
+            "newN": 581
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 579,
+            "newN": 582
+          },
+          {
+            "parts": [
+              {
+                "content": "                           \\`<span style=\"background-color: rgba(234, 41, 102, 0.5);white-space: pre;\">\\`,",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 580,
+            "newN": 583
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 581,
+            "newN": 584
+          },
+          {
+            "parts": [
+              { "content": "                         )", "status": "ADDED" }
+            ],
+            "oldN": 582,
+            "newN": 585
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 583,
+            "newN": 586
+          },
+          {
+            "parts": [
+              { "content": "                         ", "status": "ADDED" }
+            ],
+            "oldN": 584,
+            "newN": 587
+          },
+          {
+            "parts": [
+              {
+                "content": "-.replace(/<\\/->/g, \"</span>&nbsp;\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 585,
+            "newN": 588
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 586,
+            "newN": 589
+          },
+          {
+            "parts": [
+              {
+                "content": "-                        .replace(/<\\/\\+>/g, \"</span>&nbsp;\"),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 587,
+            "newN": 590
+          },
+          {
+            "parts": [
+              {
+                "content": "+.replace(/\\{\\{\\/\\+\\}\\}/g, \"</span>\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 588,
+            "newN": 591
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 589,
+            "newN": 592
+          },
+          {
+            "parts": [
+              {
+                "content": "+                        .replace(/\\{\\{\\/\\-\\}\\}/g, \"</span>\"),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 590,
+            "newN": 593
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 591,
+            "newN": 594
+          },
+          {
+            "parts": [
+              { "content": "                     }}", "status": "ADDED" }
+            ],
+            "oldN": 592,
+            "newN": 595
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 593,
+            "newN": 596
+          },
+          {
+            "parts": [
+              { "content": "                   ></div>", "status": "ADDED" }
+            ],
+            "oldN": 594,
+            "newN": 597
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 595,
+            "newN": 598
+          },
+          {
+            "parts": [
+              { "content": "                 </div>", "status": "ADDED" }
+            ],
+            "oldN": 596,
+            "newN": 599
+          },
+          {
+            "parts": [{ "content": "~", "status": "ADDED" }],
+            "oldN": 597,
+            "newN": 600
+          },
+          {
+            "parts": [{ "content": "`;", "status": "ADDED" }],
+            "oldN": 598,
+            "newN": 601
+          },
+          {
+            "parts": [
+              {
+                "content": "parseDiff(testDiff.split(\"\\n\"));",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 600,
+            "newN": 603
+          }
+        ]
+      },
+      {
+        "oldLineCount": 3,
+        "oldLineStart": 1,
+        "newLineCount": 4,
+        "newLineStart": 1,
+        "beforeDiff": [],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "import * as fs from \"fs\";", "status": "ADDED" }
+            ],
+            "oldN": 1,
+            "newN": 1
+          }
+        ]
+      },
+      {
+        "enclosingBlock": "export class GetDiff {",
+        "oldLineCount": 11,
+        "oldLineStart": 15,
+        "newLineCount": 15,
+        "newLineStart": 16,
+        "beforeDiff": [],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "    ", "status": "UNCHANGED" },
+              {
+                "content": "fs.writeFileSync(\"diff.log\", unstagedDiffLines.join('\\n'));",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 18,
+            "newN": 19
+          },
+          {
+            "parts": [
+              { "content": "    ", "status": "UNCHANGED" },
+              {
+                "content": "console.log({ stagedDiffLines });",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 26,
+            "newN": 27
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "status": "REMOVED",
+    "displayPaths": ["electron/modules/repository/entrypoints/electron.ts"],
+    "oldPath": "electron/modules/repository/entrypoints/electron.ts",
+    "newPath": null,
+    "hunks": [
+      {
+        "oldLineCount": 64,
+        "oldLineStart": 1,
+        "newLineCount": 0,
+        "newLineStart": 0,
+        "beforeDiff": [
+          {
+            "parts": [
+              { "content": "import path from \"path\";", "status": "REMOVED" }
+            ],
+            "oldN": 1,
+            "newN": 0
+          },
+          {
+            "parts": [
+              {
+                "content": "import { fileURLToPath } from \"url\";",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 2,
+            "newN": 1
+          },
+          {
+            "parts": [
+              {
+                "content": "import { app, BrowserWindow, ipcMain } from \"electron\";",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 4,
+            "newN": 3
+          },
+          {
+            "parts": [
+              {
+                "content": "import { bootstrap } from \"../../../commons/application/bootstrap.js\";",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 6,
+            "newN": 5
+          },
+          {
+            "parts": [
+              {
+                "content": "let window: Electron.BrowserWindow;",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 8,
+            "newN": 7
+          },
+          {
+            "parts": [
+              {
+                "content": "let useCases: Awaited<ReturnType<typeof bootstrap>>;",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 9,
+            "newN": 8
+          },
+          {
+            "parts": [
+              {
+                "content": "const __filename = fileURLToPath(import.meta.url);",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 10,
+            "newN": 9
+          },
+          {
+            "parts": [
+              {
+                "content": "const __dirname = path.dirname(__filename);",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 11,
+            "newN": 10
+          },
+          {
+            "parts": [
+              {
+                "content": "async function createWindow() {",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 13,
+            "newN": 12
+          },
+          {
+            "parts": [
+              {
+                "content": "  window = new BrowserWindow({",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 14,
+            "newN": 13
+          },
+          {
+            "parts": [{ "content": "    width: 800,", "status": "REMOVED" }],
+            "oldN": 15,
+            "newN": 14
+          },
+          {
+            "parts": [{ "content": "    height: 600,", "status": "REMOVED" }],
+            "oldN": 16,
+            "newN": 15
+          },
+          {
+            "parts": [
+              { "content": "    webPreferences: {", "status": "REMOVED" }
+            ],
+            "oldN": 17,
+            "newN": 16
+          },
+          {
+            "parts": [
+              {
+                "content": "      preload: path.join(__dirname, \"preload.js\"),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 18,
+            "newN": 17
+          },
+          {
+            "parts": [
+              {
+                "content": "      contextIsolation: true,",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 19,
+            "newN": 18
+          },
+          {
+            "parts": [
+              {
+                "content": "      nodeIntegration: false,",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 20,
+            "newN": 19
+          },
+          {
+            "parts": [{ "content": "    },", "status": "REMOVED" }],
+            "oldN": 21,
+            "newN": 20
+          },
+          {
+            "parts": [{ "content": "  });", "status": "REMOVED" }],
+            "oldN": 22,
+            "newN": 21
+          },
+          {
+            "parts": [
+              {
+                "content": "  window.loadURL(\"http://localhost:5173\"); // dev URL",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 24,
+            "newN": 23
+          },
+          {
+            "parts": [
+              {
+                "content": "  window.webContents.openDevTools();",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 25,
+            "newN": 24
+          },
+          {
+            "parts": [
+              {
+                "content": "  useCases = await bootstrap();",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 27,
+            "newN": 26
+          },
+          {
+            "parts": [{ "content": "  ipcMain.handle(", "status": "REMOVED" }],
+            "oldN": 29,
+            "newN": 28
+          },
+          {
+            "parts": [
+              { "content": "    \"files:getDiff\",", "status": "REMOVED" }
+            ],
+            "oldN": 30,
+            "newN": 29
+          },
+          {
+            "parts": [
+              {
+                "content": "    async (event, message) => await useCases.getDiff.execute(message, window),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 31,
+            "newN": 30
+          },
+          {
+            "parts": [{ "content": "  );", "status": "REMOVED" }],
+            "oldN": 32,
+            "newN": 31
+          },
+          {
+            "parts": [
+              {
+                "content": "  ipcMain.handle(\"repositories:clone\", async (event, message) => {",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 34,
+            "newN": 33
+          },
+          {
+            "parts": [
+              {
+                "content": "    const res = await useCases.cloneRepository.execute(message, window);",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 35,
+            "newN": 34
+          },
+          {
+            "parts": [{ "content": "    return res;", "status": "REMOVED" }],
+            "oldN": 36,
+            "newN": 35
+          },
+          {
+            "parts": [{ "content": "  });", "status": "REMOVED" }],
+            "oldN": 37,
+            "newN": 36
+          },
+          {
+            "parts": [{ "content": "  ipcMain.handle(", "status": "REMOVED" }],
+            "oldN": 39,
+            "newN": 38
+          },
+          {
+            "parts": [
+              {
+                "content": "    \"repositories:getBranchesForRepository\",",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 40,
+            "newN": 39
+          },
+          {
+            "parts": [
+              {
+                "content": "    async (event, message) =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 41,
+            "newN": 40
+          },
+          {
+            "parts": [
+              {
+                "content": "      await useCases.getBranchesForRepository.execute(message, window),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 42,
+            "newN": 41
+          },
+          {
+            "parts": [{ "content": "  );", "status": "REMOVED" }],
+            "oldN": 43,
+            "newN": 42
+          },
+          {
+            "parts": [{ "content": "  ipcMain.handle(", "status": "REMOVED" }],
+            "oldN": 45,
+            "newN": 44
+          },
+          {
+            "parts": [
+              {
+                "content": "    \"repositories:getSaved\",",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 46,
+            "newN": 45
+          },
+          {
+            "parts": [
+              {
+                "content": "    async (event, message) =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 47,
+            "newN": 46
+          },
+          {
+            "parts": [
+              {
+                "content": "      await useCases.getSavedRepositories.execute(window),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 48,
+            "newN": 47
+          },
+          {
+            "parts": [{ "content": "  );", "status": "REMOVED" }],
+            "oldN": 49,
+            "newN": 48
+          },
+          {
+            "parts": [{ "content": "  ipcMain.handle(", "status": "REMOVED" }],
+            "oldN": 51,
+            "newN": 50
+          },
+          {
+            "parts": [
+              {
+                "content": "    \"repositories:selectFromDisk\",",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 52,
+            "newN": 51
+          },
+          {
+            "parts": [
+              {
+                "content": "    async (event, message) =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 53,
+            "newN": 52
+          },
+          {
+            "parts": [
+              {
+                "content": "      await useCases.selectRepositoryFromDisk.execute(window),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 54,
+            "newN": 53
+          },
+          {
+            "parts": [{ "content": "  );", "status": "REMOVED" }],
+            "oldN": 55,
+            "newN": 54
+          },
+          {
+            "parts": [{ "content": "  ipcMain.handle(", "status": "REMOVED" }],
+            "oldN": 57,
+            "newN": 56
+          },
+          {
+            "parts": [
+              {
+                "content": "    \"repositories:selectFromSaved\",",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 58,
+            "newN": 57
+          },
+          {
+            "parts": [
+              {
+                "content": "    async (event, message) =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 59,
+            "newN": 58
+          },
+          {
+            "parts": [
+              {
+                "content": "      await useCases.selectRepositoryFromSaved.execute(message, window),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 60,
+            "newN": 59
+          },
+          {
+            "parts": [{ "content": "  );", "status": "REMOVED" }],
+            "oldN": 61,
+            "newN": 60
+          },
+          {
+            "parts": [{ "content": "}", "status": "REMOVED" }],
+            "oldN": 62,
+            "newN": 61
+          },
+          {
+            "parts": [
+              {
+                "content": "app.whenReady().then(createWindow);",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 64,
+            "newN": 63
+          }
+        ],
+        "afterDiff": []
+      }
+    ]
+  },
+  {
+    "status": "REMOVED",
+    "displayPaths": ["electron/modules/repository/entrypoints/preload.ts"],
+    "oldPath": "electron/modules/repository/entrypoints/preload.ts",
+    "newPath": null,
+    "hunks": [
+      {
+        "oldLineCount": 22,
+        "oldLineStart": 1,
+        "newLineCount": 0,
+        "newLineStart": 0,
+        "beforeDiff": [
+          {
+            "parts": [
+              {
+                "content": "const electron = require(\"electron\");",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 1,
+            "newN": 0
+          },
+          {
+            "parts": [
+              {
+                "content": "electron.contextBridge.exposeInMainWorld(\"electronAPI\", {",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 3,
+            "newN": 2
+          },
+          {
+            "parts": [
+              {
+                "content": "  cloneRepository: (url: string) =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 4,
+            "newN": 3
+          },
+          {
+            "parts": [
+              {
+                "content": "    electron.ipcRenderer.invoke(\"repositories:clone\", url),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 5,
+            "newN": 4
+          },
+          {
+            "parts": [
+              {
+                "content": "  getBranchesForRepository: (path: string) =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 6,
+            "newN": 5
+          },
+          {
+            "parts": [
+              {
+                "content": "    electron.ipcRenderer.invoke(\"repositories:getBranchesForRepository\", path),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 7,
+            "newN": 6
+          },
+          {
+            "parts": [
+              {
+                "content": "  getDiff: (path: string) => electron.ipcRenderer.invoke(\"files:getDiff\", path),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 8,
+            "newN": 7
+          },
+          {
+            "parts": [
+              {
+                "content": "  getSavedRepositories: () =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 9,
+            "newN": 8
+          },
+          {
+            "parts": [
+              {
+                "content": "    electron.ipcRenderer.invoke(\"repositories:getSaved\"),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 10,
+            "newN": 9
+          },
+          {
+            "parts": [
+              {
+                "content": "  selectRepositoryFromDisk: () =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 11,
+            "newN": 10
+          },
+          {
+            "parts": [
+              {
+                "content": "    electron.ipcRenderer.invoke(\"repositories:selectFromDisk\"),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 12,
+            "newN": 11
+          },
+          {
+            "parts": [
+              {
+                "content": "  selectRepositoryFromSaved: (path: string) =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 13,
+            "newN": 12
+          },
+          {
+            "parts": [
+              {
+                "content": "    electron.ipcRenderer.invoke(\"repositories:selectFromSaved\", path),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 14,
+            "newN": 13
+          },
+          {
+            "parts": [{ "content": "  onGitError: (", "status": "REMOVED" }],
+            "oldN": 16,
+            "newN": 15
+          },
+          {
+            "parts": [{ "content": "    cb: (", "status": "REMOVED" }],
+            "oldN": 17,
+            "newN": 16
+          },
+          {
+            "parts": [
+              {
+                "content": "      event: Electron.IpcRendererEvent,",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 18,
+            "newN": 17
+          },
+          {
+            "parts": [
+              {
+                "content": "      data: { message: string; command?: string },",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 19,
+            "newN": 18
+          },
+          {
+            "parts": [{ "content": "    ) => void,", "status": "REMOVED" }],
+            "oldN": 20,
+            "newN": 19
+          },
+          {
+            "parts": [
+              {
+                "content": "  ) => electron.ipcRenderer.on(\"git-error\", cb),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 21,
+            "newN": 20
+          },
+          {
+            "parts": [{ "content": "});", "status": "REMOVED" }],
+            "oldN": 22,
+            "newN": 21
+          }
+        ],
+        "afterDiff": []
+      }
+    ]
+  },
+  {
+    "status": "MODIFIED",
+    "displayPaths": ["electron/modules/repository/infra/git-cli-runner.ts"],
+    "oldPath": "electron/modules/repository/infra/git-cli-runner.ts",
+    "newPath": "electron/modules/repository/infra/git-cli-runner.ts",
+    "hunks": [
+      {
+        "enclosingBlock": "export class GitCliRunner implements GitRunner {",
+        "oldLineCount": 12,
+        "oldLineStart": 121,
+        "newLineCount": 10,
+        "newLineStart": 121,
+        "beforeDiff": [
+          {
+            "parts": [
+              { "content": "    const lines = await ", "status": "UNCHANGED" },
+              { "content": "this.safeRun(", "status": "REMOVED" }
+            ],
+            "oldN": 124,
+            "newN": 124
+          },
+          {
+            "parts": [{ "content": "      \"git\",", "status": "REMOVED" }],
+            "oldN": 125,
+            "newN": 125
+          },
+          {
+            "parts": [
+              {
+                "content": "      [\"diff\", \"--no-color\", \"--word-diff=porcelain\"],",
+                "status": "REMOVED"
+              },
+              { "content": " {", "status": "UNCHANGED" }
+            ],
+            "oldN": 126,
+            "newN": 126
+          },
+          {
+            "parts": [
+              { "content": "      cwd: ", "status": "UNCHANGED" },
+              { "content": "repositoryPath },", "status": "REMOVED" }
+            ],
+            "oldN": 128,
+            "newN": 128
+          },
+          {
+            "parts": [{ "content": "    );", "status": "REMOVED" }],
+            "oldN": 129,
+            "newN": 129
+          },
+          {
+            "parts": [
+              { "content": "    parseDiff(lines);", "status": "REMOVED" }
+            ],
+            "oldN": 130,
+            "newN": 130
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "this.safeRun(\"git\", args,", "status": "ADDED" },
+              { "content": " {", "status": "UNCHANGED" }
+            ],
+            "oldN": 126,
+            "newN": 126
+          },
+          {
+            "parts": [{ "content": "repositoryPath,", "status": "ADDED" }],
+            "oldN": 130,
+            "newN": 130
+          },
+          {
+            "parts": [{ "content": "    });", "status": "ADDED" }],
+            "oldN": 131,
+            "newN": 131
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "status": "REMOVED",
+    "displayPaths": ["electron/preload.ts"],
+    "oldPath": "electron/preload.ts",
+    "newPath": null,
+    "hunks": [
+      {
+        "oldLineCount": 12,
+        "oldLineStart": 1,
+        "newLineCount": 0,
+        "newLineStart": 0,
+        "beforeDiff": [
+          {
+            "parts": [
+              {
+                "content": "const { contextBridge, ipcRenderer } = require(\"electron\");",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 1,
+            "newN": 0
+          },
+          {
+            "parts": [
+              {
+                "content": "contextBridge.exposeInMainWorld(\"electronAPI\", {",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 3,
+            "newN": 2
+          },
+          {
+            "parts": [
+              {
+                "content": "  sendMessage: (msg: string) => ipcRenderer.send(\"toMain\", msg),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 4,
+            "newN": 3
+          },
+          {
+            "parts": [
+              {
+                "content": "  onReply: (cb: () => void) => ipcRenderer.on(\"fromMain\", cb),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 5,
+            "newN": 4
+          },
+          {
+            "parts": [
+              {
+                "content": "  getBranchesForRepository: (repositoryPath: string, remoteName: string) =>",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 7,
+            "newN": 6
+          },
+          {
+            "parts": [
+              { "content": "    ipcRenderer.send(", "status": "REMOVED" }
+            ],
+            "oldN": 8,
+            "newN": 7
+          },
+          {
+            "parts": [
+              {
+                "content": "      \"getBranchesForRepository\",",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 9,
+            "newN": 8
+          },
+          {
+            "parts": [
+              {
+                "content": "      JSON.stringify({ repositoryPath, remoteName }),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 10,
+            "newN": 9
+          },
+          {
+            "parts": [{ "content": "    ),", "status": "REMOVED" }],
+            "oldN": 11,
+            "newN": 10
+          },
+          {
+            "parts": [{ "content": "});", "status": "REMOVED" }],
+            "oldN": 12,
+            "newN": 11
+          }
+        ],
+        "afterDiff": []
+      }
+    ]
+  },
+  {
+    "status": "MODIFIED",
+    "displayPaths": ["package.json"],
+    "oldPath": "package.json",
+    "newPath": "package.json",
+    "hunks": [
+      {
+        "oldLineCount": 7,
+        "oldLineStart": 3,
+        "newLineCount": 7,
+        "newLineStart": 3,
+        "beforeDiff": [
+          {
+            "parts": [
+              { "content": "  \"main\": ", "status": "UNCHANGED" },
+              {
+                "content": "\"dist/electron/modules/repository/entrypoints/electron.js\",",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 6,
+            "newN": 6
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "  \"main\": ", "status": "UNCHANGED" },
+              {
+                "content": "\"dist/electron/commons/infra/electron.js\",",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 6,
+            "newN": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "status": "MODIFIED",
+    "displayPaths": ["src/components/atoms/header-repo-selection.tsx"],
+    "oldPath": "src/components/atoms/header-repo-selection.tsx",
+    "newPath": "src/components/atoms/header-repo-selection.tsx",
+    "hunks": [
+      {
+        "enclosingBlock": "export default function HeaderRepoSelection({",
+        "oldLineCount": 11,
+        "oldLineStart": 36,
+        "newLineCount": 17,
+        "newLineStart": 36,
+        "beforeDiff": [
+          {
+            "parts": [
+              {
+                "content": "        className=\"mr-2 flex ",
+                "status": "UNCHANGED"
+              },
+              { "content": "cursor-pointer\">", "status": "REMOVED" }
+            ],
+            "oldN": 40,
+            "newN": 40
+          },
+          {
+            "parts": [
+              {
+                "content": "        <div className=\"mr-4 flex items-center ",
+                "status": "UNCHANGED"
+              },
+              { "content": "text-sm\"", "status": "REMOVED" }
+            ],
+            "oldN": 49,
+            "newN": 49
+          },
+          {
+            "parts": [
+              {
+                "content": "          onClick={() => setCurrentAction(\"RepoMethodSelection\")}",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 50,
+            "newN": 50
+          },
+          {
+            "parts": [{ "content": "        >", "status": "REMOVED" }],
+            "oldN": 51,
+            "newN": 51
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              {
+                "content": "        className=\"mr-2 flex ",
+                "status": "UNCHANGED"
+              },
+              { "content": "cursor-pointer\"", "status": "ADDED" }
+            ],
+            "oldN": 40,
+            "newN": 40
+          },
+          {
+            "parts": [
+              { "content": "        onClick={() =>", "status": "ADDED" }
+            ],
+            "oldN": 41,
+            "newN": 41
+          },
+          {
+            "parts": [
+              { "content": "          setCurrentAction(", "status": "ADDED" }
+            ],
+            "oldN": 42,
+            "newN": 42
+          },
+          {
+            "parts": [
+              {
+                "content": "            currentAction === \"RepoMethodSelection\"",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 43,
+            "newN": 43
+          },
+          {
+            "parts": [
+              { "content": "              ? undefined", "status": "ADDED" }
+            ],
+            "oldN": 44,
+            "newN": 44
+          },
+          {
+            "parts": [
+              {
+                "content": "              : \"RepoMethodSelection\",",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 45,
+            "newN": 45
+          },
+          {
+            "parts": [{ "content": "          )", "status": "ADDED" }],
+            "oldN": 46,
+            "newN": 46
+          },
+          {
+            "parts": [{ "content": "        }", "status": "ADDED" }],
+            "oldN": 47,
+            "newN": 47
+          },
+          {
+            "parts": [{ "content": "      >", "status": "ADDED" }],
+            "oldN": 48,
+            "newN": 48
+          },
+          {
+            "parts": [{ "content": "text-sm\">", "status": "ADDED" }],
+            "oldN": 51,
+            "newN": 51
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "status": "MODIFIED",
+    "displayPaths": ["src/components/organisms/diff.tsx"],
+    "oldPath": "src/components/organisms/diff.tsx",
+    "newPath": "src/components/organisms/diff.tsx",
+    "hunks": [
+      {
+        "enclosingBlock": "export default function Diff({ diff }: { diff: FileDiff }) {",
+        "oldLineCount": 16,
+        "oldLineStart": 40,
+        "newLineCount": 21,
+        "newLineStart": 40,
+        "beforeDiff": [
+          {
+            "parts": [
+              {
+                "content": "                          ",
+                "status": "UNCHANGED"
+              },
+              { "content": "/\\<\\+\\>/g,", "status": "REMOVED" }
+            ],
+            "oldN": 49,
+            "newN": 49
+          },
+          {
+            "parts": [
+              {
+                "content": "                          ",
+                "status": "UNCHANGED"
+              },
+              { "content": "/\\<\\-\\>/g,", "status": "REMOVED" }
+            ],
+            "oldN": 53,
+            "newN": 53
+          },
+          {
+            "parts": [
+              { "content": "                        ", "status": "UNCHANGED" },
+              {
+                "content": ".replace(/<\\/->/g, \"</span>&nbsp;\")",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 56,
+            "newN": 56
+          },
+          {
+            "parts": [
+              {
+                "content": "                        .replace(/<\\/\\+>/g, \"</span>&nbsp;\"),",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 57,
+            "newN": 57
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "                        ", "status": "UNCHANGED" },
+              { "content": ".replace(/&/g, \"&amp;\")", "status": "ADDED" }
+            ],
+            "oldN": 43,
+            "newN": 43
+          },
+          {
+            "parts": [
+              {
+                "content": "                        .replace(/</g, \"&lt;\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 44,
+            "newN": 44
+          },
+          {
+            "parts": [
+              {
+                "content": "                        .replace(/>/g, \"&gt;\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 45,
+            "newN": 45
+          },
+          {
+            "parts": [
+              {
+                "content": "                        .replace(/\"/g, \"&quot;\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 46,
+            "newN": 46
+          },
+          {
+            "parts": [
+              {
+                "content": "                        .replace(/'/g, \"&#39;\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 47,
+            "newN": 47
+          },
+          {
+            "parts": [
+              {
+                "content": "                          ",
+                "status": "UNCHANGED"
+              },
+              { "content": "/\\{\\{\\+\\}\\}/g,", "status": "ADDED" }
+            ],
+            "oldN": 49,
+            "newN": 49
+          },
+          {
+            "parts": [
+              {
+                "content": "                          ",
+                "status": "UNCHANGED"
+              },
+              { "content": "/\\{\\{\\-\\}\\}/g,", "status": "ADDED" }
+            ],
+            "oldN": 53,
+            "newN": 53
+          },
+          {
+            "parts": [
+              {
+                "content": ".replace(/\\{\\{\\/\\+\\}\\}/g, \"</span>\")",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 57,
+            "newN": 57
+          },
+          {
+            "parts": [
+              {
+                "content": "                        .replace(/\\{\\{\\/\\-\\}\\}/g, \"</span>\"),",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 58,
+            "newN": 58
+          }
+        ]
+      }
+    ]
+  }
+]

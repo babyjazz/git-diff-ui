@@ -1,0 +1,265 @@
+[
+  {
+    "status": "MODIFIED",
+    "displayPaths": ["core/smartcard/page.tsx"],
+    "oldPath": "core/smartcard/page.tsx",
+    "newPath": "core/smartcard/page.tsx",
+    "hunks": [
+      {
+        "enclosingBlock": "import { GoUpscaleIconProps } from \"./components/upscale-logo\";",
+        "oldLineCount": 7,
+        "oldLineStart": 9,
+        "newLineCount": 7,
+        "newLineStart": 9,
+        "beforeDiff": [],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "import { ", "status": "UNCHANGED" },
+              { "content": "Smartcard,", "status": "ADDED" },
+              {
+                "content": " SmartcardProps } from \"core/shared/types\";",
+                "status": "UNCHANGED"
+              }
+            ],
+            "oldN": 12,
+            "newN": 12
+          }
+        ]
+      },
+      {
+        "enclosingBlock": "const PrivacyPolicyModal = dynamic<PrivacyPolicyModalProps>(() =>",
+        "oldLineCount": 7,
+        "oldLineStart": 30,
+        "newLineCount": 7,
+        "newLineStart": 30,
+        "beforeDiff": [],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "import { ", "status": "UNCHANGED" },
+              { "content": "NextRouter,", "status": "ADDED" },
+              {
+                "content": " useRouter } from \"next/router\";",
+                "status": "UNCHANGED"
+              }
+            ],
+            "oldN": 33,
+            "newN": 33
+          }
+        ]
+      },
+      {
+        "enclosingBlock": "const GoUpscaleIcon = dynamic<GoUpscaleIconProps>(() => import(\"./components/ups",
+        "oldLineCount": 6,
+        "oldLineStart": 38,
+        "newLineCount": 15,
+        "newLineStart": 38,
+        "beforeDiff": [],
+        "afterDiff": [
+          {
+            "parts": [
+              {
+                "content": "const userInactiveRedirect = (router: NextRouter, smartcard: Smartcard) => {",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 41,
+            "newN": 41
+          },
+          {
+            "parts": [{ "content": "  router.push(", "status": "ADDED" }],
+            "oldN": 42,
+            "newN": 42
+          },
+          {
+            "parts": [
+              {
+                "content": "    smartcard.config.companyWebsite ||",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 43,
+            "newN": 43
+          },
+          {
+            "parts": [
+              {
+                "content": "      smartcard.config.facebookPage ||",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 44,
+            "newN": 44
+          },
+          {
+            "parts": [
+              {
+                "content": "      smartcard.config.linkedinPage ||",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 45,
+            "newN": 45
+          },
+          {
+            "parts": [
+              {
+                "content": "      \"https://www.goupscale.com/\",",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 46,
+            "newN": 46
+          },
+          {
+            "parts": [{ "content": "  );", "status": "ADDED" }],
+            "oldN": 47,
+            "newN": 47
+          },
+          {
+            "parts": [{ "content": "};", "status": "ADDED" }],
+            "oldN": 48,
+            "newN": 48
+          }
+        ]
+      },
+      {
+        "enclosingBlock": "const SmartcardPageContent = ({ smartcard, clientName }: SmartcardProps) => {",
+        "oldLineCount": 17,
+        "oldLineStart": 155,
+        "newLineCount": 8,
+        "newLineStart": 164,
+        "beforeDiff": [
+          {
+            "parts": [
+              {
+                "content": "  const userInactiveRedirect = () => {",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 158,
+            "newN": 167
+          },
+          {
+            "parts": [{ "content": "    router.push(", "status": "REMOVED" }],
+            "oldN": 159,
+            "newN": 168
+          },
+          {
+            "parts": [
+              {
+                "content": "      smartcard.config.companyWebsite ||",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 160,
+            "newN": 169
+          },
+          {
+            "parts": [
+              {
+                "content": "        smartcard.config.facebookPage ||",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 161,
+            "newN": 170
+          },
+          {
+            "parts": [
+              {
+                "content": "        smartcard.config.linkedinPage ||",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 162,
+            "newN": 171
+          },
+          {
+            "parts": [
+              {
+                "content": "        \"https://www.goupscale.com/\",",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 163,
+            "newN": 172
+          },
+          {
+            "parts": [{ "content": "    );", "status": "REMOVED" }],
+            "oldN": 164,
+            "newN": 173
+          },
+          {
+            "parts": [{ "content": "  };", "status": "REMOVED" }],
+            "oldN": 165,
+            "newN": 174
+          },
+          {
+            "parts": [
+              { "content": "    ", "status": "UNCHANGED" },
+              { "content": "userInactiveRedirect();", "status": "REMOVED" }
+            ],
+            "oldN": 168,
+            "newN": 177
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "    ", "status": "UNCHANGED" },
+              {
+                "content": "userInactiveRedirect(router, smartcard);",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 168,
+            "newN": 177
+          }
+        ]
+      },
+      {
+        "enclosingBlock": "const SmartcardPage = ({ smartcard, clientName }: SmartcardProps) => {",
+        "oldLineCount": 6,
+        "oldLineStart": 325,
+        "newLineCount": 12,
+        "newLineStart": 325,
+        "beforeDiff": [],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "    ", "status": "UNCHANGED" },
+              {
+                "content": "if (smartcard.status === \"INACTIVE\") {",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 329,
+            "newN": 329
+          },
+          {
+            "parts": [
+              {
+                "content": "      userInactiveRedirect(router, smartcard);",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 330,
+            "newN": 330
+          },
+          {
+            "parts": [{ "content": "      return;", "status": "ADDED" }],
+            "oldN": 331,
+            "newN": 331
+          },
+          {
+            "parts": [{ "content": "    }", "status": "ADDED" }],
+            "oldN": 332,
+            "newN": 332
+          }
+        ]
+      }
+    ]
+  }
+]

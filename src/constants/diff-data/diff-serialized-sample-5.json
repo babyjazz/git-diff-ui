@@ -1,0 +1,208 @@
+[
+  {
+    "status": "MODIFIED",
+    "displayPaths": [
+      "src/modules/media-library/presenters/components/organisms/add-medias-side-bar/index.tsx"
+    ],
+    "oldPath": "src/modules/media-library/presenters/components/organisms/add-medias-side-bar/index.tsx",
+    "newPath": "src/modules/media-library/presenters/components/organisms/add-medias-side-bar/index.tsx",
+    "hunks": [
+      {
+        "enclosingBlock": "import { useMediaModalPagination, useSelectedMediaModal, MediaModalProvider } fr",
+        "oldLineCount": 7,
+        "oldLineStart": 31,
+        "newLineCount": 7,
+        "newLineStart": 31,
+        "beforeDiff": [
+          {
+            "parts": [
+              {
+                "content": "import { Wrapper, CloseWrapper, SideBarWrapper, MainContent, SearchWrapper, Grid, Footer, InternalOnlyLayer, MessageWrapper, SelectedWrapper, Selected, ",
+                "status": "UNCHANGED"
+              },
+              { "content": "SelectedItem", "status": "REMOVED" },
+              { "content": " } from './styles';", "status": "UNCHANGED" }
+            ],
+            "oldN": 34,
+            "newN": 34
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              {
+                "content": "import { Wrapper, CloseWrapper, SideBarWrapper, MainContent, SearchWrapper, Grid, Footer, InternalOnlyLayer, MessageWrapper, SelectedWrapper, Selected, ",
+                "status": "UNCHANGED"
+              },
+              { "content": "SelectedItem, TextWrapper", "status": "ADDED" },
+              { "content": " } from './styles';", "status": "UNCHANGED" }
+            ],
+            "oldN": 34,
+            "newN": 34
+          }
+        ]
+      },
+      {
+        "enclosingBlock": "const AddMediasSideBarContent: React.FC<React.PropsWithChildren<AddMediasSideBar",
+        "oldLineCount": 8,
+        "oldLineStart": 271,
+        "newLineCount": 9,
+        "newLineStart": 271,
+        "beforeDiff": [
+          {
+            "parts": [
+              { "content": "                      ", "status": "UNCHANGED" },
+              { "content": "<Spacer x={8} />", "status": "REMOVED" }
+            ],
+            "oldN": 274,
+            "newN": 274
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "                      ", "status": "UNCHANGED" },
+              { "content": "<TextWrapper>", "status": "ADDED" }
+            ],
+            "oldN": 274,
+            "newN": 274
+          },
+          {
+            "parts": [
+              { "content": "                      ", "status": "UNCHANGED" },
+              { "content": "</TextWrapper>", "status": "ADDED" }
+            ],
+            "oldN": 276,
+            "newN": 276
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "status": "MODIFIED",
+    "displayPaths": [
+      "src/modules/media-library/presenters/components/organisms/add-medias-side-bar/styles.ts"
+    ],
+    "oldPath": "src/modules/media-library/presenters/components/organisms/add-medias-side-bar/styles.ts",
+    "newPath": "src/modules/media-library/presenters/components/organisms/add-medias-side-bar/styles.ts",
+    "hunks": [
+      {
+        "enclosingBlock": "export const Grid = styled.div`",
+        "oldLineCount": 7,
+        "oldLineStart": 57,
+        "newLineCount": 7,
+        "newLineStart": 57,
+        "beforeDiff": [
+          {
+            "parts": [
+              { "content": "  grid-template-columns: ", "status": "UNCHANGED" },
+              { "content": "1fr;", "status": "REMOVED" }
+            ],
+            "oldN": 60,
+            "newN": 60
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "  grid-template-columns: ", "status": "UNCHANGED" },
+              { "content": "minmax(0, 1fr);", "status": "ADDED" }
+            ],
+            "oldN": 60,
+            "newN": 60
+          }
+        ]
+      },
+      {
+        "enclosingBlock": "export const Selected = styled(motion.div)`",
+        "oldLineCount": 7,
+        "oldLineStart": 106,
+        "newLineCount": 16,
+        "newLineStart": 106,
+        "beforeDiff": [
+          {
+            "parts": [
+              { "content": "  display: ", "status": "UNCHANGED" },
+              { "content": "flex;", "status": "REMOVED" }
+            ],
+            "oldN": 109,
+            "newN": 109
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "  display: ", "status": "UNCHANGED" },
+              { "content": "grid;", "status": "ADDED" }
+            ],
+            "oldN": 109,
+            "newN": 109
+          },
+          {
+            "parts": [
+              { "content": "  ", "status": "UNCHANGED" },
+              {
+                "content": "grid-template-columns: min-content minmax(0, 1fr);",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 111,
+            "newN": 111
+          },
+          {
+            "parts": [{ "content": "  column-gap: 8px;", "status": "ADDED" }],
+            "oldN": 112,
+            "newN": 112
+          },
+          {
+            "parts": [
+              { "content": "  grid-template-rows: 1fr;", "status": "ADDED" }
+            ],
+            "oldN": 113,
+            "newN": 113
+          },
+          {
+            "parts": [
+              {
+                "content": "export const TextWrapper = styled.div`",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 117,
+            "newN": 117
+          },
+          {
+            "parts": [
+              { "content": "  display: -webkit-box;", "status": "ADDED" }
+            ],
+            "oldN": 118,
+            "newN": 118
+          },
+          {
+            "parts": [
+              {
+                "content": "  -webkit-box-orient: vertical;",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 119,
+            "newN": 119
+          },
+          {
+            "parts": [
+              { "content": "  word-break: break-word;", "status": "ADDED" }
+            ],
+            "oldN": 120,
+            "newN": 120
+          },
+          {
+            "parts": [{ "content": "`;", "status": "ADDED" }],
+            "oldN": 121,
+            "newN": 121
+          }
+        ]
+      }
+    ]
+  }
+]

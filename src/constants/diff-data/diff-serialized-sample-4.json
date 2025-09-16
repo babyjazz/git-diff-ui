@@ -1,0 +1,165 @@
+[
+  {
+    "status": "MODIFIED",
+    "displayPaths": [
+      "src/modules/media-library/presenters/components/molecules/detail-sections/details/index.tsx"
+    ],
+    "oldPath": "src/modules/media-library/presenters/components/molecules/detail-sections/details/index.tsx",
+    "newPath": "src/modules/media-library/presenters/components/molecules/detail-sections/details/index.tsx",
+    "hunks": [
+      {
+        "enclosingBlock": "export const MediaDetailsSection: React.FC = () => {",
+        "oldLineCount": 7,
+        "oldLineStart": 88,
+        "newLineCount": 18,
+        "newLineStart": 88,
+        "beforeDiff": [
+          {
+            "parts": [
+              { "content": "                ", "status": "UNCHANGED" },
+              { "content": "{t('Settings')}", "status": "REMOVED" }
+            ],
+            "oldN": 91,
+            "newN": 91
+          }
+        ],
+        "afterDiff": [
+          {
+            "parts": [
+              { "content": "                ", "status": "UNCHANGED" },
+              { "content": "{t('Privacy settings')}", "status": "ADDED" }
+            ],
+            "oldN": 91,
+            "newN": 91
+          },
+          {
+            "parts": [
+              { "content": "              </Typography>", "status": "ADDED" }
+            ],
+            "oldN": 92,
+            "newN": 92
+          },
+          {
+            "parts": [
+              { "content": "            </InlineWrapper>", "status": "ADDED" }
+            ],
+            "oldN": 93,
+            "newN": 93
+          },
+          {
+            "parts": [
+              { "content": "            <Spacer y={4} />", "status": "ADDED" }
+            ],
+            "oldN": 94,
+            "newN": 94
+          },
+          {
+            "parts": [
+              {
+                "content": "            <PrivateSwitch isPrivate={!!isPrivate} onChange={handlePrivate} />",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 95,
+            "newN": 95
+          },
+          {
+            "parts": [
+              { "content": "            <Spacer y={8} />", "status": "ADDED" }
+            ],
+            "oldN": 96,
+            "newN": 96
+          },
+          {
+            "parts": [
+              {
+                "content": "            <IsPublicSwitch isPublic={!!isPublic} onChange={handleIsPublic} />",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 97,
+            "newN": 97
+          },
+          {
+            "parts": [
+              { "content": "          </BlockWrapper>", "status": "ADDED" }
+            ],
+            "oldN": 98,
+            "newN": 98
+          },
+          {
+            "parts": [
+              { "content": "          <BlockWrapper>", "status": "ADDED" }
+            ],
+            "oldN": 99,
+            "newN": 99
+          },
+          {
+            "parts": [
+              { "content": "            <InlineWrapper>", "status": "ADDED" }
+            ],
+            "oldN": 100,
+            "newN": 100
+          },
+          {
+            "parts": [
+              {
+                "content": "              <Typography variant=\"h4\" color=\"neutral\">",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 101,
+            "newN": 101
+          },
+          {
+            "parts": [
+              {
+                "content": "                {t('Smartcard settings')}",
+                "status": "ADDED"
+              }
+            ],
+            "oldN": 102,
+            "newN": 102
+          }
+        ]
+      },
+      {
+        "enclosingBlock": "export const MediaDetailsSection: React.FC = () => {",
+        "oldLineCount": 9,
+        "oldLineStart": 98,
+        "newLineCount": 6,
+        "newLineStart": 109,
+        "beforeDiff": [
+          {
+            "parts": [
+              {
+                "content": "            <PrivateSwitch isPrivate={!!isPrivate} onChange={handlePrivate} />",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 101,
+            "newN": 112
+          },
+          {
+            "parts": [
+              { "content": "            <Spacer y={8} />", "status": "REMOVED" }
+            ],
+            "oldN": 102,
+            "newN": 113
+          },
+          {
+            "parts": [
+              {
+                "content": "            <IsPublicSwitch isPublic={!!isPublic} onChange={handleIsPublic} />",
+                "status": "REMOVED"
+              }
+            ],
+            "oldN": 103,
+            "newN": 114
+          }
+        ],
+        "afterDiff": []
+      }
+    ]
+  }
+]
