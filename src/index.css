@@ -39,7 +39,7 @@
   --color-danger-200: #d73a49;
   --color-danger-300: #8d1d27;
   --color-neutral-100: #f6f8fa;
-  --color-neutral-200: #d2d5da;
+  --color-neutral-200: #b0b0b0;
   --color-neutral-300: #586069;
   --color-neutral-400: #242831;
   --color-neutral-500: #1d2025;
@@ -67,9 +67,9 @@
   --color-highlight-add: var(--color-primary-300);
 
   /* others */
-  --color-diff-add: var(--color-primary-200);
+  --color-diff-add: var(--color-primary-300);
   --color-highlight-add: var(--color-primary-300);
-  --color-diff-remove: var(--color-danger-200);
+  --color-diff-remove: var(--color-danger-300);
   --color-highlight-remove: var(--color-danger-300);
   --color-badge: var(--color-danger-300);
   --color-line-range: var(--color-info-300);
