@@ -16,15 +16,18 @@
 }
 
 @layer base {
-  html {
+  html,
+  body {
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-  }
-
-  body {
     @apply m-0;
     min-width: 320px;
+    overflow-x: hidden;
+  }
+
+  a {
+    @apply text-text-link;
   }
 }
 
@@ -52,9 +55,11 @@
   --color-highlight-add: var(--color-primary-300);
   --color-diff-remove: var(--color-danger-200);
   --color-highlight-remove: var(--color-danger-300);
+  --color-badge: var(--color-danger-300);
   --color-line-range: var(--color-info-300);
   --color-text-primary: var(--color-neutral-100);
   --color-text-secondary: var(--color-neutral-200);
+  --color-text-link: var(--color-info-300);
   --color-border-default: var(--color-neutral-300);
 }
 
