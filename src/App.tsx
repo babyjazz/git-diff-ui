@@ -1,11 +1,9 @@
 import DiffPanel from '@/components/diff-panel'
 
-function App() {
+export default function App() {
   return (
     <div>
       <DiffPanel />
     </div>
   )
 }
-
-export default App
