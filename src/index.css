@@ -48,19 +48,34 @@
 }
 
 @theme {
+  /* background */
   --color-primary-bg: var(--color-neutral-400);
   --color-secondary-bg: var(--color-neutral-500);
   --color-add-bg: var(--color-neutral-500);
+
+  /* text */
+  --color-text-primary: var(--color-neutral-100);
+  --color-text-secondary: var(--color-neutral-200);
+  --color-text-add: var(--color-primary-300);
+  --color-text-remove: var(--color-danger-300);
+  --color-text-link: var(--color-info-300);
+
+  /* border */
+  --color-border-default: var(--color-neutral-300);
+
+  /* toast */
+  --color-highlight-add: var(--color-primary-300);
+
+  /* others */
   --color-diff-add: var(--color-primary-200);
   --color-highlight-add: var(--color-primary-300);
   --color-diff-remove: var(--color-danger-200);
   --color-highlight-remove: var(--color-danger-300);
   --color-badge: var(--color-danger-300);
   --color-line-range: var(--color-info-300);
-  --color-text-primary: var(--color-neutral-100);
-  --color-text-secondary: var(--color-neutral-200);
-  --color-text-link: var(--color-info-300);
-  --color-border-default: var(--color-neutral-300);
+
+  /* toast */
+  --color-toast-success: var(--color-primary-300);
 }
 
 /* 

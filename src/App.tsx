@@ -1,6 +1,7 @@
 import { GitPullRequestIcon } from 'lucide-react'
 import { DiffPanel } from '@/components/diff-panel'
-import { Badge } from './components/ui/badge'
+import { Badge } from '@/components/ui/badge'
+import { Toaster } from '@/components/ui/sonner'
 
 export default function App() {
   return (
@@ -20,6 +21,8 @@ export default function App() {
         </a>
       </div>
       <DiffPanel />
+
+      <Toaster />
     </div>
   )
 }
