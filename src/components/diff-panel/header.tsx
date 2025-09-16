@@ -7,7 +7,7 @@ import {
 
 export default function Header() {
   return (
-    <div className="rounded text-xs items-center bg-secondary-bg border flex justify-between border-border-default p-2 mb-2 text-text-primary">
+    <div className="rounded-t-md text-xs items-center border-b-0 bg-secondary-bg border flex justify-between border-border-default p-2 text-text-primary -mb-0.5">
       <div className="flex gap-2 items-center">
         <ChevronDownIcon className="w-3" />
         <span>src/components/some-file.tsx</span>

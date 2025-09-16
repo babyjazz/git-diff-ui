@@ -1,8 +1,8 @@
-import DiffPanel from '@/components/diff-panel'
+import { DiffPanel } from '@/components/diff-panel'
 
 export default function App() {
   return (
-    <div>
+    <div className="w-full">
       <DiffPanel />
     </div>
   )

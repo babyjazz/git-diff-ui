@@ -22,16 +22,9 @@
     line-height: 1.5;
   }
 
-  strong {
-    font-weight: bold;
-  }
-
   body {
-    margin: 0;
-    display: flex;
-    place-items: center;
+    @apply m-0;
     min-width: 320px;
-    min-height: 100vh;
   }
 }
 
@@ -45,14 +38,16 @@
   --color-neutral-100: #f6f8fa;
   --color-neutral-200: #d2d5da;
   --color-neutral-300: #586069;
-  --color-neutral-400: #1d2025;
+  --color-neutral-400: #242831;
+  --color-neutral-500: #1d2025;
   --color-info-100: #ddefff;
   --color-info-300: #005cc5;
 }
 
 @theme {
-  --color-primary-bg: var(--color-neutral-300);
-  --color-secondary-bg: var(--color-neutral-400);
+  --color-primary-bg: var(--color-neutral-400);
+  --color-secondary-bg: var(--color-neutral-500);
+  --color-add-bg: var(--color-neutral-500);
   --color-diff-add: var(--color-primary-200);
   --color-highlight-add: var(--color-primary-300);
   --color-diff-remove: var(--color-danger-200);
@@ -60,6 +55,7 @@
   --color-line-range: var(--color-info-300);
   --color-text-primary: var(--color-neutral-100);
   --color-text-secondary: var(--color-neutral-200);
+  --color-border-default: var(--color-neutral-300);
 }
 
 /* 
