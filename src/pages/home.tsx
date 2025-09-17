@@ -23,7 +23,7 @@ export default function Home() {
               <GitPullRequestIcon />
               <span>Open</span>
             </Badge>
-            <span className="">[GGWP-999][fix] add rm -rf * into button</span>
+            <span className="">[GGWP-999][MOCK] add rm -rf * into button</span>
             <a
               href="#"
               className="text-info-300 hover:underline ml-2 underline"
