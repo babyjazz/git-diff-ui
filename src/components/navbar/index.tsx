@@ -18,6 +18,7 @@ export default function Navbar() {
   const [activePr, setActivePr] = useState(prId)
 
   useEffect(() => {
+    // Update state from URL param
     setActivePr(prId)
   }, [prId])
 
