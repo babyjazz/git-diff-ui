@@ -1,5 +1,6 @@
 import type { MouseEventHandler } from 'react'
 import {
+  ArrowRightIcon,
   ChevronDownIcon,
   CopyIcon,
   EllipsisIcon,
@@ -54,6 +55,7 @@ export default function Header({
         {isFileRenamed ? (
           <>
             <span className="text-text-remove">{oldFileName}</span>
+            <ArrowRightIcon className="w-3" />
             <span className="text-text-add">{newFileName}</span>
           </>
         ) : (
