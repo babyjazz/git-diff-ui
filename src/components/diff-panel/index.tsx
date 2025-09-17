@@ -1,18 +1,19 @@
 import { Fragment, useState } from 'react'
+import { useParams } from 'react-router'
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@radix-ui/react-collapsible'
-import diffSampleData from '@/constants/diff-data/diff-serialized-sample-1.json'
+import { sampleDataMapper } from '@/constants/diff-data-mapper'
 import { type DiffData } from '@/types/diff-data'
 import CodeView from './code-view'
 import Header from './header'
 
 export function DiffPanel() {
-  const [isViewed, setIsViewed] = useState(
-    Array(diffSampleData.length).fill(true),
-  )
+  const { prId = '1' } = useParams()
+  const sampleData = sampleDataMapper[prId] || []
+  const [isViewed, setIsViewed] = useState(Array(sampleData.length).fill(true))
 
   const handleFold = (i: number) => {
     setIsViewed((prev) => {
@@ -32,7 +33,7 @@ export function DiffPanel() {
 
   return (
     <div className="rounded w-full space-y-3">
-      {diffSampleData.map((file, i) => (
+      {sampleData.map((file, i) => (
         <Fragment key={file.displayPaths[0]}>
           <Collapsible
             defaultOpen
