@@ -16,10 +16,20 @@ bun i
 bun run dev
 ```
 
+server will run on http://localhost:5173
+
 ### Build production
 
 ```bash
 bun run build
+```
+
+server will run on http://localhost:4173
+
+### Run prod in local
+
+```bash
+bun run preview
 ```
 
 ### NOTE to reviewer
