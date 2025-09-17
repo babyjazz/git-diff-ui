@@ -62,6 +62,7 @@
 
   /* border */
   --color-border-default: var(--color-neutral-300);
+  --color-border-active: var(--color-info-300);
 
   /* toast */
   --color-highlight-add: var(--color-primary-300);
