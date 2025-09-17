@@ -21,3 +21,8 @@ bun run dev
 ```bash
 bun run build
 ```
+
+### NOTE to reviewer
+
+- No code indent in diff panel due to I don't know what key to use for indent line
+- Some data is just a mocked message

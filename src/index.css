@@ -81,10 +81,10 @@
 }
 
 /* 
- * @NOTE we can implement dark mode or color blind mode later if we use css token base
+ * @NOTE we can implement dark mode or color blind mode later if we use css token base like this
  */
 /* .dark {
-  --color-diff-neutral-bg: var(--color-neutral-300);
+  --color-primary-bg: var(--color-neutral-100);
 } */
 
 /* .blind {
