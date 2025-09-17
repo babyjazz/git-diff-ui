@@ -5,6 +5,7 @@ import {
   CollapsibleTrigger,
 } from '@radix-ui/react-collapsible'
 import diffSampleData from '@/constants/diff-data/diff-serialized-sample-1.json'
+import { type DiffData } from '@/types/diff-data'
 import CodeView from './code-view'
 import Header from './header'
 
@@ -49,7 +50,7 @@ export function DiffPanel() {
             </CollapsibleTrigger>
 
             <CollapsibleContent className="w-full bg-primary-bg rounded border-t-0 border border-border-default">
-              <CodeView hunks={file.hunks} />
+              <CodeView hunks={file.hunks as DiffData['hunks']} />
             </CollapsibleContent>
           </Collapsible>
         </Fragment>
