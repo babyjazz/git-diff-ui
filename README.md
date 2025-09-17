@@ -29,3 +29,4 @@ bun run build
 - Use Shadcn for design system
 - Use tailwind for css styling
 - React Router v7 for pull request sample data
+- Use void(0) stacks
